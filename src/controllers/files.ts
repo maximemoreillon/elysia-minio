@@ -16,7 +16,7 @@ export const storeFile = async (file: File) => {
 
 const readStream = (dataStream: any) =>
   new Promise((resolve, reject) => {
-    let buffer: any[] = []
+    const buffer: any[] = []
     dataStream.on("data", (chunk: any) => {
       buffer.push(chunk)
     })
